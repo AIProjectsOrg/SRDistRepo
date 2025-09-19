@@ -6,12 +6,12 @@ import json
 import glob
 
 from pprint import pprint
-from utils.model_summary import get_model_flops
-from utils import utils_logger
-from utils import utils_image as util
+from NTIRE2025_ImageSR_x4.utils.model_summary import get_model_flops
+from NTIRE2025_ImageSR_x4.utils import utils_logger
+from NTIRE2025_ImageSR_x4.utils import utils_image as util
 
 # from models.team00_DAT.model import DAT
-from models.team07_MicroSR.model import MicroSR
+from NTIRE2025_ImageSR_x4.models.team07_MicroSR.model import MicroSR
 from tqdm import tqdm
 
 def forward(img_lq, model, tile=None, tile_overlap=32, scale=4):
